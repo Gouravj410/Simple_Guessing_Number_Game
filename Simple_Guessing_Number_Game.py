@@ -19,7 +19,14 @@ def guess_number_game():
                 if attempt<3:
                     print(f"You have left {3-attempt} Attempt.")
                 else:
-                    print("Game Over")
+                    print("""
+                         *******************
+                         *******************
+                         **   Game Over!  **
+                         **   You lose!   **
+                         *******************
+                         *******************
+                     """)
             else:
                 print("""
                          *******************
