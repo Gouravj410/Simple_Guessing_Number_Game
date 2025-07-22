@@ -20,21 +20,21 @@ def guess_number_game():
                     print(f"You have left {3-attempt} Attempt.")
                 else:
                     print("""
-                         *******************
-                         *******************
-                         **   Game Over!  **
-                         **   You lose!   **
-                         *******************
-                         *******************
+                     *******************
+                     *******************
+                     **   Game Over!  **
+                     **   You lose!   **
+                     *******************
+                     *******************
                      """)
             else:
                 print("""
-                         *******************
-                         *******************
-                         **   Well Done!  **
-                         **   You Win     **
-                         *******************
-                         *******************
+                 *******************
+                 *******************
+                 **   Well Done!  **
+                 **   You Win     **
+                 *******************
+                 *******************
                      """)
                 break
             attempt+=1
@@ -42,7 +42,7 @@ def guess_number_game():
         print(f"The Correct number is {correct_num}.")
 
         play_again = input("Do you want to play again? (yes/no): ").lower()
-        if play_again != "yes":
+        if play_again not in ["y", "yes"]:
             print("Thanks for playing! Goodbye!")
             break
 
